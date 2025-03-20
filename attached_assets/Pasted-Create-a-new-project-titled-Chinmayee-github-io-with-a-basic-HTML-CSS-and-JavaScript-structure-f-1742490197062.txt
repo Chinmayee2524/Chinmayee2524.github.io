@@ -1,0 +1,72 @@
+Create a new project titled "Chinmayee.github.io" with a basic HTML, CSS, and JavaScript structure for a personal portfolio website. Use Tailwind CSS for styling.
+
+Create an index.html file for the homepage with the following structure:
+- Header: My name "Chinmayee Bondgulwar" and tagline "Turning Code into Solutions: Java | AI | Web Development".
+- Section 1: A brief introduction about me with a photo placeholder.
+- Section 2: Featured projects with titles, descriptions, and GitHub links for:
+  - Eco-Friendly Product Recommender
+  - Inventory Management System
+  - Campus Event Management CRM
+- Section 3: Quick links to:
+  - Portfolio
+  - Blog/Articles
+  - Contact Me
+- Footer: Include a "Built with ❤️ by Chinmayee" message.
+
+Create an about.html file with the following content:
+- My background as a Computer Engineering student at Dr. D.Y. Patil Institute.
+- Highlight my Salesforce, Java, and Web Development experience.
+- Mention certifications like:
+  - DBMS (NPTEL)
+  - Azure Cloud (Verzeo)
+- Add a “Fun Facts” section with my hobbies like writing, Canva design, and book/movie reviews.
+
+Create a projects.html file showcasing my top projects:
+- Each project should include:
+  - Project Title
+  - Short Description
+  - Technologies Used
+  - GitHub Link
+  - Live Demo Link (if applicable)
+Add these projects:
+1. Eco-Friendly Product Recommender
+2. Inventory Management System
+3. Campus Event Management CRM
+
+Create a blog.html file that displays:
+- Categories like:
+  - Coding Guides (Java, Spring Boot)
+  - Finance Insights
+  - Movie/Book Reviews
+  - Canva Design Tips
+- Add sample blog cards with placeholders for title, description, and “Read More” links.
+- Include a "Start Here" guide for new visitors.
+
+Create a contact.html file with:
+- A simple contact form (Name, Email, Message).
+- Links to my LinkedIn, GitHub, Medium, and Canva profiles.
+- Add a "Let's Collaborate" call-to-action encouraging collaboration.
+
+Use Tailwind CSS to:
+- Add a clean, modern look with rounded corners, box shadows, and hover effects.
+- Ensure the layout is responsive for both desktop and mobile.
+- Use soft colors like pastel green, light beige, and warm blue for an eco-friendly feel.
+- Highlight project cards with subtle animations.
+
+Add these additional features:
+- A Light/Dark Mode toggle for better user experience.
+- A search bar on the blog page to filter posts.
+- Add smooth scroll animations for better navigation.
+
+Initialize a new Git repository in the project folder.
+Add a .gitignore file for node_modules and unnecessary files.
+Commit all project files and push to a new repository named "Chinmayee.github.io".
+Enable GitHub Pages from the repository’s settings.
+
+- Add a custom favicon with a unique logo using Canva.
+- Add meta tags for SEO:
+  - Title: Chinmayee Bondgulwar | Portfolio
+  - Description: Developer | Java | AI | Web Development
+  - Keywords: Java, AI, Salesforce, Eco-Friendly Projects, Web Development
+
+Create a README.md file explaining the website structure, features, and how to contribute or update content in the future.
