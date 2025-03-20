@@ -1,0 +1,124 @@
+/* Custom styles beyond Tailwind CSS */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Dark mode transition */
+.dark-mode-transition {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Project card hover effect */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog card hover effect */
+.blog-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form focus styles */
+input:focus, 
+textarea:focus {
+    outline: none;
+    border-color: #4ECCA3;
+    box-shadow: 0 0 0 2px rgba(78, 204, 163, 0.2);
+}
+
+/* Button hover effects */
+button:hover, 
+a.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Active state for filter buttons */
+.project-filter-btn.active,
+.blog-category-btn.active {
+    background-color: #4ECCA3;
+    color: white;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4ECCA3;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3aa987;
+}
+
+/* Dark mode scrollbar adjustments */
+.dark ::-webkit-scrollbar-track {
+    background: #2d3748;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #4ECCA3;
+}
+
+/* Loading animation for async operations */
+.loading-spinner {
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #4ECCA3;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.dark .loading-spinner {
+    border-color: rgba(255, 255, 255, 0.1);
+    border-top-color: #4ECCA3;
+}
+
+/* Form validation styles */
+.input-error {
+    border-color: #FF6B6B !important;
+    box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2) !important;
+}
+
+.error-message {
+    color: #FF6B6B;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+/* Mobile menu animation */
+#mobileMenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+#mobileMenu.show {
+    max-height: 500px; /* Arbitrary height that should be larger than the actual menu height */
+}

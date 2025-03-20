@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Chinmayee Bondgulwar</title>
+    <meta name="description" content="Get in touch with Chinmayee Bondgulwar for collaboration or project inquiries">
+    <meta name="keywords" content="Contact, Java Developer, AI Developer, Collaboration, Projects">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4ECCA3',
+            secondary: '#5DA9E9',
+            accent: '#FF6B6B',
+            bgLight: '#F9F7F7',
+            bgDark: '#1A202C',
+            textLight: '#333333',
+            textDark: '#F9F7F7'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+          },
+        }
+      }
+    };
+    </script>
+</head>
+<body class="font-sans bg-bgLight dark:bg-bgDark text-textLight dark:text-textDark dark-mode-transition">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-bgDark/90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo/Name -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="font-heading font-bold text-xl text-primary">CB</span>
+                    <span class="font-heading font-medium hidden sm:block">Chinmayee Bondgulwar</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="font-medium hover:text-primary transition-colors duration-200">Home</a>
+                    <a href="about.html" class="font-medium hover:text-primary transition-colors duration-200">About</a>
+                    <a href="projects.html" class="font-medium hover:text-primary transition-colors duration-200">Projects</a>
+                    <a href="blog.html" class="font-medium hover:text-primary transition-colors duration-200">Blog</a>
+                    <a href="contact.html" class="font-medium text-primary transition-colors duration-200">Contact</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <!-- Dark Mode Toggle Button -->
+                    <button id="darkModeToggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block"></i>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuButton" class="md:hidden p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu (Hidden by default) -->
+            <div id="mobileMenu" class="md:hidden hidden pb-4">
+                <nav class="flex flex-col space-y-4">
+                    <a href="index.html" class="font-medium hover:text-primary transition-colors duration-200 py-2">Home</a>
+                    <a href="about.html" class="font-medium hover:text-primary transition-colors duration-200 py-2">About</a>
+                    <a href="projects.html" class="font-medium hover:text-primary transition-colors duration-200 py-2">Projects</a>
+                    <a href="blog.html" class="font-medium hover:text-primary transition-colors duration-200 py-2">Blog</a>
+                    <a href="contact.html" class="font-medium text-primary transition-colors duration-200 py-2">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Page Header -->
+        <section class="py-12 md:py-16 bg-gradient-to-r from-primary/10 to-secondary/10">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="font-heading font-bold text-3xl md:text-4xl lg:text-5xl mb-4">Get in Touch</h1>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Have a question or want to work together? Feel free to reach out!
+                </p>
+            </div>
+        </section>
+        
+        <!-- Contact Content -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <div class="lg:w-1/2">
+                        <h2 class="font-heading font-bold text-3xl md:text-4xl mb-6">Contact Me</h2>
+                        <p class="text-gray-600 dark:text-gray-300 mb-8 max-w-lg">
+                            I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+                        </p>
+                        
+                        <!-- Contact Form -->
+                        <form id="contactForm" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="px-6 py-3 bg-primary text-white font-medium rounded-md shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="lg:w-1/2">
+                        <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md">
+                            <h3 class="font-heading font-semibold text-xl mb-6">Let's Collaborate</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-8">
+                                Looking for a motivated developer for your next project? I'm excited to bring my skills and passion to new challenges.
+                            </p>
+                            
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="font-medium mb-3">Connect with me</h4>
+                                    <div class="flex flex-wrap gap-4">
+                                        <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full bg-[#0077B5] text-white hover:opacity-90 transition-opacity">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full bg-[#333333] text-white hover:opacity-90 transition-opacity">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full bg-[#00ab6c] text-white hover:opacity-90 transition-opacity">
+                                            <i class="fab fa-medium"></i>
+                                        </a>
+                                        <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full bg-[#7d2ae8] text-white hover:opacity-90 transition-opacity">
+                                            <i class="fas fa-palette"></i> <!-- Canva icon replacement -->
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-primary/5 p-6 rounded-lg">
+                                    <h4 class="font-medium mb-4">Quick Links</h4>
+                                    <ul class="space-y-3">
+                                        <li>
+                                            <a href="projects.html" class="flex items-center gap-2 text-primary hover:text-primary/80">
+                                                <i class="fas fa-briefcase"></i> Portfolio
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html" class="flex items-center gap-2 text-primary hover:text-primary/80">
+                                                <i class="fas fa-pen-fancy"></i> Blog/Articles
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex items-center gap-2 text-primary hover:text-primary/80">
+                                                <i class="fas fa-file-alt"></i> Resume
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="bg-secondary/5 p-6 rounded-lg">
+                                    <h4 class="font-medium mb-4">Looking for...</h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <i class="fas fa-check-circle text-secondary mt-1"></i>
+                                            <span>Collaboration on innovative projects</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <i class="fas fa-check-circle text-secondary mt-1"></i>
+                                            <span>Internship opportunities in Java development</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <i class="fas fa-check-circle text-secondary mt-1"></i>
+                                            <span>Open-source project contributions</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Map Section (Placeholder) -->
+        <section class="py-12 bg-white dark:bg-gray-800">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="bg-gray-200 dark:bg-gray-700 h-64 rounded-xl flex items-center justify-center">
+                    <div class="text-gray-500 dark:text-gray-400">
+                        <i class="fas fa-map-marker-alt text-3xl mb-2"></i>
+                        <p>Map Placeholder - Location: Pune, India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-800 py-8 border-t border-gray-200 dark:border-gray-700">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <span class="font-heading font-bold text-xl text-primary">CB</span>
+                        <span class="font-heading font-medium">Chinmayee Bondgulwar</span>
+                    </a>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">
+                        Turning Code into Solutions
+                    </p>
+                </div>
+                
+                <div class="flex flex-wrap gap-6">
+                    <div>
+                        <h4 class="font-medium mb-3">Sitemap</h4>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="text-gray-600 dark:text-gray-400 hover:text-primary">Home</a></li>
+                            <li><a href="about.html" class="text-gray-600 dark:text-gray-400 hover:text-primary">About</a></li>
+                            <li><a href="projects.html" class="text-gray-600 dark:text-gray-400 hover:text-primary">Projects</a></li>
+                            <li><a href="blog.html" class="text-gray-600 dark:text-gray-400 hover:text-primary">Blog</a></li>
+                            <li><a href="contact.html" class="text-gray-600 dark:text-gray-400 hover:text-primary">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-medium mb-3">Connect</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary">LinkedIn</a></li>
+                            <li><a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary">GitHub</a></li>
+                            <li><a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary">Medium</a></li>
+                            <li><a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary">Canva</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700 text-center">
+                <p class="text-gray-600 dark:text-gray-400">
+                    Built with ❤️ by Chinmayee
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/darkMode.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

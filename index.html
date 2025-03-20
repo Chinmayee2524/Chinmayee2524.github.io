@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinmayee Bondgulwar | Portfolio</title>
+    <meta name="description" content="Developer | Java | AI | Web Development">
+    <meta name="keywords" content="Java, AI, Salesforce, Eco-Friendly Projects, Web Development">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4ECCA3',
+            secondary: '#5DA9E9',
+            accent: '#FF6B6B',
+            bgLight: '#F9F7F7',
+            bgDark: '#1A202C',
+            textLight: '#333333',
+            textDark: '#F9F7F7'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+          },
+        }
+      }
+    };
+    </script>
+</head>
+<body class="font-sans bg-bgLight dark:bg-bgDark text-textLight dark:text-textDark dark-mode-transition">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-bgDark/90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo/Name -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="font-heading font-bold text-xl text-primary">CB</span>
+                    <span class="font-heading font-medium hidden sm:block">Chinmayee Bondgulwar</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="font-medium hover:text-primary transition-colors duration-200">Home</a>
+                    <a href="about.html" class="font-medium hover:text-primary transition-colors duration-200">About</a>
+                    <a href="projects.html" class="font-medium hover:text-primary transition-colors duration-200">Projects</a>
+                    <a href="blog.html" class="font-medium hover:text-primary transition-colors duration-200">Blog</a>
+                    <a href="contact.html" class="font-medium hover:text-primary transition-colors duration-200">Contact</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <!-- Dark Mode Toggle Button -->
+                    <button id="darkModeToggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block"></i>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuButton" class="md:hidden p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu (Hidden by default) -->
+            <div id="mobileMenu" class="md:hidden hidden pb-4">
+                <nav class="flex flex-col space-y-4">
+                    <a href="index.html" class="font-medium hover:text-primary transition-colors duration-200 py-2">Home</a>
+                    <a href="about.html" class="font-medium hover:text-primary transition-colors duration-200 py-2">About</a>
+                    <a href="projects.html" class="font-medium hover:text-primary transition-colors duration-200 py-2">Projects</a>
+                    <a href="blog.html" class="font-medium hover:text-primary transition-colors duration-200 py-2">Blog</a>
+                    <a href="contact.html" class="font-medium hover:text-primary transition-colors duration-200 py-2">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="py-16 md:py-24 border-b border-gray-200 dark:border-gray-700">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="md:w-1/2">
+                        <h1 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-4">
+                            <span class="text-primary">Hi, I'm Chinmayee</span>
+                        </h1>
+                        <p class="text-xl md:text-2xl font-light mb-6">
+                            Turning Code into Solutions: <br>
+                            <span class="font-medium">Java | AI | Web Development</span>
+                        </p>
+                        <p class="text-gray-600 dark:text-gray-300 mb-8 max-w-lg">
+                            Computer Engineering student passionate about building innovative solutions that make a positive impact on the world.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="projects.html" class="px-6 py-3 bg-primary text-white font-medium rounded-md shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1">
+                                View My Work
+                            </a>
+                            <a href="contact.html" class="px-6 py-3 border border-gray-300 dark:border-gray-600 font-medium rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200">
+                                Contact Me
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-secondary/10 border-4 border-primary flex items-center justify-center overflow-hidden">
+                            <!-- Placeholder for profile image -->
+                            <div class="absolute inset-0 flex items-center justify-center text-6xl font-bold text-primary">CB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Projects -->
+        <section id="projects" class="py-16 md:py-24 border-b border-gray-200 dark:border-gray-700">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="font-heading font-bold text-3xl md:text-4xl mb-4">Featured Projects</h2>
+                <p class="text-gray-600 dark:text-gray-300 mb-12 max-w-2xl">
+                    Here are some of my recent work that showcase my skills and passion for building innovative solutions.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                        <div class="h-48 bg-gradient-to-r from-primary/30 to-secondary/30 flex items-center justify-center">
+                            <i class="fas fa-leaf text-5xl text-primary"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-heading font-semibold text-xl mb-2">Eco-Friendly Product Recommender</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                AI-powered system that recommends sustainable alternatives to everyday products based on environmental impact.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary">Java</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary">Machine Learning</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary">Spring Boot</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="text-primary hover:text-primary/80 font-medium flex items-center gap-1">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                                <a href="#" class="text-secondary hover:text-secondary/80 font-medium flex items-center gap-1">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                        <div class="h-48 bg-gradient-to-r from-secondary/30 to-primary/30 flex items-center justify-center">
+                            <i class="fas fa-boxes text-5xl text-secondary"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-heading font-semibold text-xl mb-2">Inventory Management System</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                Full-stack application for tracking inventory, managing orders, and generating sales reports.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs px-2 py-1 rounded-full bg-secondary/10 text-secondary">Java</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-secondary/10 text-secondary">Spring Boot</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-secondary/10 text-secondary">React</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="text-primary hover:text-primary/80 font-medium flex items-center gap-1">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                                <a href="#" class="text-secondary hover:text-secondary/80 font-medium flex items-center gap-1">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                        <div class="h-48 bg-gradient-to-r from-accent/30 to-primary/30 flex items-center justify-center">
+                            <i class="fas fa-calendar-alt text-5xl text-accent"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-heading font-semibold text-xl mb-2">Campus Event Management CRM</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                CRM system for managing campus events, registrations, and attendance tracking.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs px-2 py-1 rounded-full bg-accent/10 text-accent">Java</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-accent/10 text-accent">Salesforce</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-accent/10 text-accent">Lightning Web Components</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="text-primary hover:text-primary/80 font-medium flex items-center gap-1">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                                <a href="#" class="text-secondary hover:text-secondary/80 font-medium flex items-center gap-1">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <a href="projects.html" class="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium">
+                        View All Projects <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Quick Links -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Portfolio -->
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-200">
+                        <div class="mb-4 text-primary">
+                            <i class="fas fa-briefcase text-4xl"></i>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl mb-3">Portfolio</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Explore my projects and discover how I solve complex problems with elegant solutions.
+                        </p>
+                        <a href="projects.html" class="text-primary hover:text-primary/80 font-medium flex items-center gap-1">
+                            View Portfolio <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Blog -->
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-200">
+                        <div class="mb-4 text-secondary">
+                            <i class="fas fa-pen-fancy text-4xl"></i>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl mb-3">Blog Articles</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Read my thoughts on technology, design, and development in these detailed articles.
+                        </p>
+                        <a href="blog.html" class="text-primary hover:text-primary/80 font-medium flex items-center gap-1">
+                            Read Articles <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Contact -->
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-200">
+                        <div class="mb-4 text-accent">
+                            <i class="fas fa-envelope text-4xl"></i>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl mb-3">Contact Me</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Let's discuss your project and see how we can collaborate to create something amazing.
+                        </p>
+                        <a href="contact.html" class="text-primary hover:text-primary/80 font-medium flex items-center gap-1">
+                            Get in Touch <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-800 py-8 border-t border-gray-200 dark:border-gray-700">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <span class="font-heading font-bold text-xl text-primary">CB</span>
+                        <span class="font-heading font-medium">Chinmayee Bondgulwar</span>
+                    </a>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">
+                        Turning Code into Solutions
+                    </p>
+                </div>
+                
+                <div class="flex flex-wrap gap-6">
+                    <div>
+                        <h4 class="font-medium mb-3">Sitemap</h4>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="text-gray-600 dark:text-gray-400 hover:text-primary">Home</a></li>
+                            <li><a href="about.html" class="text-gray-600 dark:text-gray-400 hover:text-primary">About</a></li>
+                            <li><a href="projects.html" class="text-gray-600 dark:text-gray-400 hover:text-primary">Projects</a></li>
+                            <li><a href="blog.html" class="text-gray-600 dark:text-gray-400 hover:text-primary">Blog</a></li>
+                            <li><a href="contact.html" class="text-gray-600 dark:text-gray-400 hover:text-primary">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-medium mb-3">Connect</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary">LinkedIn</a></li>
+                            <li><a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary">GitHub</a></li>
+                            <li><a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary">Medium</a></li>
+                            <li><a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary">Canva</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700 text-center">
+                <p class="text-gray-600 dark:text-gray-400">
+                    Built with ❤️ by Chinmayee
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/darkMode.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
