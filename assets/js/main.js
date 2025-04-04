@@ -62,8 +62,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 let visibleCount = 0;
                 
                 projectCards.forEach(card => {
-                    // Get categories from data attribute
-                    const cardCategories = card.dataset.category ? card.dataset.category.split(',') : [];
+                    // Get categories from data attribute and convert to lowercase for comparison
+                    const cardCategories = card.dataset.category 
+                        ? card.dataset.category.split(',').map(cat => cat.trim().toLowerCase()) 
+                        : [];
                     
                     if (category === 'all' || cardCategories.includes(category)) {
                         card.style.display = 'block';
@@ -100,11 +102,11 @@ document.addEventListener('DOMContentLoaded', function() {
             let visibleCount = 0;
             
             blogCards.forEach(card => {
-                const cardCategory = card.dataset.category;
+                const cardCategory = card.dataset.category ? card.dataset.category.trim().toLowerCase() : '';
                 const title = card.querySelector('h3').textContent.toLowerCase();
                 const description = card.querySelector('p').textContent.toLowerCase();
                 
-                const matchesCategory = category === 'all' || cardCategory === category;
+                const matchesCategory = category === 'all' || cardCategory === category.toLowerCase();
                 const matchesSearch = searchTerm === '' || 
                                       title.includes(searchTerm) || 
                                       description.includes(searchTerm);
